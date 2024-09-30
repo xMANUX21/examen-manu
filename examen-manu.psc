@@ -12,6 +12,7 @@ Funcion opc=menu
 	Escribir "4.Calcular nota final "
 	Escribir " "
 	Escribir "0.Salir "
+        EScrbir "Ingrese la opcion que desee: "
 	leer opc
 
 Fin Funcion
@@ -75,7 +76,7 @@ Funcion Nota_final(dbnotas,dbalumnos,dbinasistencias)
 		dbnotas[i,3]=not3
 		dbinasistencias[i,1]=numeroIni
 		Promedio_aritmetico=not1+not2+not3
-		si numeroIni=10 y numeroIni<15 Entonces
+		si numeroIni>10 y numeroIni<15 Entonces
 			total=Promedio_aritmetico-0.5
 		FinSi
 		si numeroIni>=15 Entonces
